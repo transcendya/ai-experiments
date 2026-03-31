@@ -15,4 +15,6 @@ source "$VENV_DIR/bin/activate"
 # Install the required packages
 pip install -r requirements.txt
 
+pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+
 python -m ipykernel install --user --name="$KERNEL_NAME" --display-name "$DISPLAY_NAME"
